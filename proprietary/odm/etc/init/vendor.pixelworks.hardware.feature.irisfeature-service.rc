@@ -1,0 +1,5 @@
+service vendor.pixelworks.hardware.feature /odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service
+    class hal animation
+    user system
+    group graphics drmrpc
+    oneshot
