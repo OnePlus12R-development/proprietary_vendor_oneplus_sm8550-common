@@ -34,7 +34,7 @@ ________________________________________________________________________________
                 <!--Vendor Properties -->
                 <Prop Name="vendor.debug.enable.lm" Value="true" />
                 <Prop Name="vendor.enable.prefetch" Value="false" />
-                <Prop Name="vendor.iop.enable_speed" Value="true" /> <!--rename to perf-->
+                <Prop Name="vendor.iop.enable_speed" Value="false" /> <!--rename to perf-->
                 <Prop Name="vendor.perf.fps_switch_hyst_time_secs" Value="10" />
                 <Prop Name="ro.vendor.perf.enable.prekill"        Value="false"     />
                 <Prop Name="ro.vendor.perf.enable.procomp" Value="true"/>

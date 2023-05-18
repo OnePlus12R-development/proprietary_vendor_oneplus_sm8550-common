@@ -279,6 +279,16 @@
             "2592x1920"
         ]
     },
+    "com.taobao.qianniu": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3840x2160",
+            "3840x1644",
+            "3280x2464",
+            "3136x2352",
+            "3136x1760",
+            "3216x1440",
+        ]
+    },
     "com.twitter.android": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
@@ -339,6 +349,16 @@
         "maxPreviewHeightForAPI2cameraId1": 1440,
         "maxPreviewWidthForAPI2cameraId0": 1920,
         "maxPreviewHeightForAPI2cameraId0": 1440
+    },
+    "com.ss.android.auto": {
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3840x2160",
+            "3840x1644",
+            "3280x2464",
+            "3136x2352",
+            "3136x1760",
+            "3216x1440",
+        ]
     },
     "com.smile.gifmaker": {
         "app_enable_rio": true,
