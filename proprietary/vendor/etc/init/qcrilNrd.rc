@@ -26,42 +26,74 @@ on property:persist.radio.multisim.config=ssss && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=ssss && property:ro.baseband=mdm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=SSSS && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=SSSS && property:ro.baseband=mdm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=dsds && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
     start vendor.qcrild2
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=dsds && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
     start vendor.qcrild2
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=DSDS && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
     start vendor.qcrild2
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
 on property:persist.radio.multisim.config=DSDS && property:ro.baseband=msm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
     start vendor.qcrild2
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+    setprop persist.radio.oplus.qcrild_start 1
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
+
+#ifdef OPLUS_HARDWARE_RADIO_QCRILD
+on property:ro.bootmode=charger && property:persist.radio.oplus.qcrild_start=1
+    stop vendor.qcrild
+    stop vendor.qcrild2
+    stop vendor.qcrild3
+#endif /* OPLUS_HARDWARE_RADIO_QCRILD */
+

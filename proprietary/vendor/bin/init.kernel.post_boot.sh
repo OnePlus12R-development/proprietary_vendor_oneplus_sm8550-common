@@ -267,6 +267,11 @@ function configure_memory_parameters() {
 	else
 		echo 4096 > /proc/sys/vm/min_free_kbytes
 	fi
+
+	# configure boost pool
+	if [ $RamSizeGB -ge 10 ]; then
+		echo 128000 > /proc/boost_pool/camera_pages
+	fi
 }
 
 configure_memory_parameters

@@ -15,9 +15,11 @@
 service occe_create /odm/bin/occe_create
     class main
     user root
-    group root
+    group root media_rw
     oneshot
 
 on post-fs-data
-mkdir /mnt/vendor/persist/camera/shader 0766 root root
-mkdir /mnt/vendor/persist/camera/shader/fb_model 0766 root root
+mkdir /mnt/occe 0777 media_rw media_rw
+mkdir /mnt/occe/shader 0777 media_rw media_rw
+mkdir /mnt/occe/shader/fb_binary 0777 media_rw media_rw
+

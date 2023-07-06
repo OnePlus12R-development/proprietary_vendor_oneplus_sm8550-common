@@ -42,7 +42,7 @@ verify_pasr_support()
 			setprop vendor.pasr.activemode.enabled false
 		fi
 
-                setprop vendor.pasr.enabled true
+                setprop vendor.pasr.enabled false
          fi
 }
 

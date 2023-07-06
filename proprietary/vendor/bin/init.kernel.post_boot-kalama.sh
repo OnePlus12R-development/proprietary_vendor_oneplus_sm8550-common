@@ -292,4 +292,6 @@ echo 1 > /sys/module/cpufreq_effiency/parameters/affect_mode
 echo "307200,45000,1344000,52000,0"  > /sys/module/cpufreq_effiency/parameters/cluster0_effiency
 echo "499200,50000,2054400,55000,0"  > /sys/module/cpufreq_effiency/parameters/cluster1_effiency
 echo "595200,55000,1977600,60000,0"  > /sys/module/cpufreq_effiency/parameters/cluster2_effiency
+#uclamp for top-app
+echo 12 > /dev/cpuctl/top-app/cpu.uclamp.min
 setprop vendor.post_boot.parsed 1

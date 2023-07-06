@@ -1,5 +1,5 @@
 <filter-conf>
-    <version>2022092012</version>
+    <version>2022092013</version>
     <isOpen>1</isOpen>
     <filter-name>sys_edge_touch_config</filter-name>
 
@@ -56,8 +56,8 @@
 				<default>
 					<!-- 防误触3.0长按时间参数 -->
 					<command name="finger_hold_matched_hor_support"	value="mod para_V2 finger_hold_matched_hor_support:1"/>
-					<command name="large_top_exit_distance"	value="mod para_V2 large_top_exit_distance:600"/>
-					<command name="large_hor_long_top_width"	value="mod para_V2 large_hor_long_top_width:500"/>
+					<command name="large_top_exit_distance"	value="mod para_V2 large_top_exit_distance:400"/>
+					<command name="large_hor_long_top_width"	value="mod para_V2 large_hor_long_top_width:280"/>
 				</default>
 			</packages>
 			<default>

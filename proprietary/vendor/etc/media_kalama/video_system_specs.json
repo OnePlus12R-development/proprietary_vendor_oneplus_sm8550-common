@@ -30,7 +30,13 @@
             // override chroma qp offset value for 8 and 10 bits:
             // default: 0
             // allowed override value: -12
-            "enc_chroma_qp_offset_10_bit": 0,
+            //#ifndef OPLUS_BUG_COMPATIBILITY
+            //SunQinhua@MULTIMEDIA.MEDIASERVER.RECORD 4882451,2023/01/05,
+            //fix 8550 encoding 10bit video moire and color overflow issue
+            //"enc_chroma_qp_offset_10_bit": 0,
+            //#else /*OPLUS_BUG_COMPATIBILITY*/
+            "enc_chroma_qp_offset_10_bit": -12,
+            //#endif /*OPLUS_BUG_COMPATIBILITY*/
             "enc_chroma_qp_offset_8_bit": 0,
             //encoder bitrate savings control (CAC) - content adaptive coding feature
             // it is bitmask.
@@ -38,7 +44,13 @@
             //  0x1: 8 bit: enable.  10 bit: disable
             //  0x2: 8 bit: disable. 10 bit: enable
             //  0x3: 8 bit: enable.  10 bit: enable
-            "enc_bitrate_savings": 3
+            //#ifndef OPLUS_BUG_COMPATIBILITY
+            //Guanbiao.Liu@MULTIMEDIA.MEDIASERVER.RECORD 4766536,2022/12/01,
+            //fix 8550 encoding bitrate much lower than 8450 issue
+            //"enc_bitrate_savings": 3
+            //#else /*OPLUS_BUG_COMPATIBILITY*/
+            "enc_bitrate_savings": 0
+            //#endif /*OPLUS_BUG_COMPATIBILITY*/
         },
 
         // "DolbyVision": {
@@ -102,12 +114,16 @@
                 "input_streams": [0],
                 "output_streams": [0, 1]
             },
-            {
-                "codec_name": "c2.qti.filter.cvp",
-                "lib_name": "libqcodec2_cvpfilter.so",
-                "input_streams": [0],
-                "output_streams": [0]
-            },
+            ////#ifndef OPLUS_BUG_COMPATIBILITY
+            //Guanbiao.Liu@MULTIMEDIA.MEDIASERVER.RECORD 4956328,2023/01/06
+            // remove non-used cvp filter,to reduce codec delay
+            //{
+            //    "codec_name": "c2.qti.filter.cvp",
+            //    "lib_name": "libqcodec2_cvpfilter.so",
+            //    "input_streams": [0],
+            //    "output_streams": [0]
+            //},
+            //#endif /*OPLUS_BUG_COMPATIBILITY*/
             {
                 "codec_name": "c2.qti.filter.saliencymap",
                 "lib_name": "libqcodec2_salmapfilter.so",

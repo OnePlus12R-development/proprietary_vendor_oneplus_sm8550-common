@@ -14,6 +14,7 @@
         "feature_flash_enable": true,
         "feature_fps_enable": true,
         "feature_rio_enable": true,
+        "feature_multicamera_enable": true,
         "limit_3rd_app_size": [
             "com.mt.mtxx.mtxx.sub.preview",
             "com.benqu.wuta.sub.preview",
@@ -211,6 +212,10 @@
         "previewSizeForAPI1Height": 1080,
         "needLimitFpsForAPI1": true
     },
+    "com.tencent.av.ui.AVActivity": {
+        "minVideoCallFps": 15,
+        "maxVideoCallFps": 15
+    },
     "com.pantum.mobileprint": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080
@@ -279,16 +284,6 @@
             "2592x1920"
         ]
     },
-    "com.taobao.qianniu": {
-        "resolutionFilterForNotAddSizeAPI1": [
-            "3840x2160",
-            "3840x1644",
-            "3280x2464",
-            "3136x2352",
-            "3136x1760",
-            "3216x1440",
-        ]
-    },
     "com.twitter.android": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
@@ -349,16 +344,6 @@
         "maxPreviewHeightForAPI2cameraId1": 1440,
         "maxPreviewWidthForAPI2cameraId0": 1920,
         "maxPreviewHeightForAPI2cameraId0": 1440
-    },
-    "com.ss.android.auto": {
-        "resolutionFilterForNotAddSizeAPI1": [
-            "3840x2160",
-            "3840x1644",
-            "3280x2464",
-            "3136x2352",
-            "3136x1760",
-            "3216x1440",
-        ]
     },
     "com.smile.gifmaker": {
         "app_enable_rio": true,
