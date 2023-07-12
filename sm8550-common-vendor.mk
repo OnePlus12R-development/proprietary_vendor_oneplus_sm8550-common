@@ -2694,9 +2694,12 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    ImsRcsService \
+    QtiTelephony \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
+    ims \
     qcrilmsgtunnel \
     WfdCommon \
     com.android.hotwordenrollment.common.util \
