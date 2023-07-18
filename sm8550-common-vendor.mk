@@ -2694,6 +2694,7 @@ PRODUCT_PACKAGES += \
     uimgbaservice \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
+    EuiccGoogle \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
