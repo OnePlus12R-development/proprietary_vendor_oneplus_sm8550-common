@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8550-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8550-common/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/sm8550-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-performance-V1-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
@@ -2692,9 +2693,9 @@ PRODUCT_PACKAGES += \
     TimeService \
     PowerOffAlarm \
     uimgbaservice \
+    EuiccGoogle \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
-    EuiccGoogle \
     ImsRcsService \
     QtiTelephony \
     QtiTelephonyService \
