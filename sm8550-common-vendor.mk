@@ -2721,8 +2721,6 @@ PRODUCT_PACKAGES += \
     dataconnection-saidl \
     deviceinfo-saidl \
     manifest_android.hardware.drm-service.widevine \
-    manifest_non_qmaa \
-    manifest_non_qmaa_extn \
     manifest_panelchaplin \
     memtrack_qti \
     qcrilhook-saidl \
