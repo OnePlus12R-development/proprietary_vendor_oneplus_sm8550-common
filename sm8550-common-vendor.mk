@@ -11,6 +11,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-performance-V1-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.cammidasservice-V1-service \
+    vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/irisConfig:$(TARGET_COPY_OUT_ODM)/bin/irisConfig \
@@ -691,6 +692,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
@@ -1033,6 +1035,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.sendextcamcmd-V1-service-impl.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.touch-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.touch-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
@@ -2460,6 +2463,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.commondcs-V1-ndk_platform.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.cwb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.cwb@1.0.so \
+    vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.display.MixLut3D-V1-ndk_platform.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.osense.client-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.osense.client-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.performance-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.performance-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.radioex.assist-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radioex.assist-V1-ndk.so \
@@ -2476,7 +2480,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.radioex.smartratswitch-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radioex.smartratswitch-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.radioex.voice-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radioex.voice-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so \
-    vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.stability.oplus_project@1.0.so \
+    vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.2.so \
@@ -2727,6 +2731,8 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cammidasservice_aidl \
     manifest_oplus_cwb \
     manifest_oplus_fingerprint \
+    manifest_oplus_sendextcamcmd \
+    manifest_oplus_stability_project_aidl \
     manifest_performance_aidl \
     vendor.pixelworks.hardware.display@1.2 \
     vendor.pixelworks.hardware.feature.irisfeature-service

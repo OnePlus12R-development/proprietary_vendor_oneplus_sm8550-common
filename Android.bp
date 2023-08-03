@@ -910,6 +910,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_oplus_sendextcamcmd",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_sendextcamcmd.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_stability_project_aidl",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_stability_project_aidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_performance_aidl",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_performance_aidl.xml",
