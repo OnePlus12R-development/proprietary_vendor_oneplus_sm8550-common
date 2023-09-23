@@ -704,39 +704,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/22861/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22861/charging_hyper_mode_config.txt \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/22861/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22861/charging_thermal_config_default.txt \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19815/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/FW_S6SY792_SAMSUNG_FAE.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/19825/LIMIT_S6SY792_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20031/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20627/FW_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/FW_FT3518_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/FW_FT3518_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20627/LIMIT_FT3518_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/FW_S6SY792_SAMSUNG.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/FW_S6SY792_SAMSUNG_FAE.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/20659/LIMIT_S6SY792_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21001/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21001/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21001/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21001/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21001/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21001/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21001/LIMIT_S3908_SAMSUNG_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21001/LIMIT_S3908_SAMSUNG_AGING.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/FW_S3910_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/FW_S3910_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/FW_S3910_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/FW_S3910_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/FW_S3910_SAMSUNG_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/FW_S3910_SAMSUNG_HBP.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/LIB_S3910_SAMSUNG_HBP.so:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/LIB_S3910_SAMSUNG_HBP.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/LIMIT_S3910_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/LIMIT_S3910_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21131/LIMIT_S3910_SAMSUNG_HBP.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21131/LIMIT_S3910_SAMSUNG_HBP.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21631/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21631/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21631/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21631/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21631/LIMIT_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/21631/LIMIT_S3908_SAMSUNG_AGING.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/21631/LIMIT_S3908_SAMSUNG_AGING.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG_FAE.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/22811/FW_S3908_SAMSUNG_sys_edge_touch_config.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/FW_S3908_SAMSUNG_sys_edge_touch_config.img \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img:$(TARGET_COPY_OUT_ODM)/firmware/tp/22811/LIMIT_S3908_SAMSUNG.img \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUDG4UHDC-B0E1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUDG4UHDC-B0E1.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUEG8UHDC-B0E1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUEG8UHDC-B0E1.bin \
