@@ -70,4 +70,5 @@ lseek: 1
 renameat: 1
 shutdown: 1
 ioctl: 1
+nanosleep: 1
 

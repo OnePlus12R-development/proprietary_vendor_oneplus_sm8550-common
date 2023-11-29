@@ -1,7 +1,7 @@
 service vendor.camera-provider /vendor/bin/hw/vendor.qti.camera.provider-service_64
     interface aidl android.hardware.camera.provider.ICameraProvider/vendor_qti/0
     interface vendor.qti.hardware.camera.postproc@1.0::IPostProcService camerapostprocservice
-    interface vendor.oplus.hardware.cameraextension@1.0::ICameraExtensionService cameraextensionservice
+    interface aidl vendor.oplus.hardware.cameraextension.ICameraExtensionService/default
     interface vendor.qti.hardware.camera.aon@1.0::IAONService aoncameraservice
     interface vendor.qti.hardware.camera.aon@1.1::IAONService aoncameraservice
     interface vendor.qti.hardware.camera.aon@1.2::IAONService aoncameraservice

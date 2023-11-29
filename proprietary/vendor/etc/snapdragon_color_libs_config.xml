@@ -42,4 +42,8 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <Name>libPanelChaplin.so</Name>
       <ProcessingOrder>3</ProcessingOrder>
     </Library>
+    <Library>
+      <Name>libdisplaycolorfeature.so</Name>
+      <ProcessingOrder>4</ProcessingOrder>
+    </Library>
 </StcLibraries>

@@ -226,6 +226,7 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x9" Node="/sys/class/kgsl/kgsl/proc/%d/state" />
         <Minor OpcodeValue="0xA" Node="SPECIAL_NODE - apply_value" />
         <Minor OpcodeValue="0xB" Node="/sys/class/kgsl/kgsl-3d0/idle_timer" />
+        <Minor OpcodeValue="0xC" Node="/sys/class/kgsl/kgsl-3d0/touch_wake" />
     <!-- gpu major end -->
 
     <!-- misc major start -->

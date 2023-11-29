@@ -6,3 +6,4 @@ libfastcvopt.so
 libOpenCL.so
 libAncFilter.so
 libarcsoft_scbokeh_video.so
+libQEGA.qti.so

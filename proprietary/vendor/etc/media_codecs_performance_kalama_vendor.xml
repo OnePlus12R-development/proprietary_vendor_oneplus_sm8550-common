@@ -26,7 +26,12 @@
     <Decoders>
         <!-- C2 HW decoders -->
         <MediaCodec name="c2.qti.avc.decoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="720-2500" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <!-- <Limit name="measured-frame-rate-320x240" range="720-2500" /> -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-320x240" range="720-1584" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="450-1700" />
             <Limit name="measured-frame-rate-1280x720" range="250-950" />
             <Limit name="measured-frame-rate-1920x1088" range="120-500" />
@@ -40,12 +45,21 @@
         <MediaCodec name="c2.qti.hevc.decoder" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="465-1900" />
             <Limit name="measured-frame-rate-720x480" range="370-1550" />
-            <Limit name="measured-frame-rate-1280x720" range="270-2600" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <!-- <Limit name="measured-frame-rate-1280x720" range="270-2600" /> -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-1280x720" range="270-594" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-1920x1080" range="260-1200" />
             <Limit name="measured-frame-rate-3840x2160" range="67-505" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.decoder.low_latency" type="video/hevc" update="true">
             <Limit name="measured-frame-rate-352x288" range="390-1850" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <Limit name="measured-frame-rate-640x360" range="500-1100" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="380-1700" />
             <Limit name="measured-frame-rate-1280x720" range="315-1920" />
             <Limit name="measured-frame-rate-1920x1080" range="220-800" />
@@ -56,24 +70,49 @@
             <Limit name="measured-frame-rate-640x360" range="280-1600" />
             <Limit name="measured-frame-rate-1280x720" range="165-450" />
             <Limit name="measured-frame-rate-1920x1080" range="130-450" />
-            <Limit name="measured-frame-rate-3840x2160" range="39-255" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- Jiade.zhang@MM.MediaServer.PLAYER, 2023/5/29, -->
+        <!-- Modify for CtsMediaTestCases  -->
+        <!-- <Limit name="measured-frame-rate-3840x2160" range="39-255" /> -->
+        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-3840x2160" range="45-255" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.qti.vp9.decoder.low_latency" type="video/x-vnd.on2.vp9" update="true">
             <Limit name="measured-frame-rate-320x180" range="415-1700" />
             <Limit name="measured-frame-rate-640x360" range="280-1600" />
             <Limit name="measured-frame-rate-1280x720" range="165-450" />
             <Limit name="measured-frame-rate-1920x1080" range="130-450" />
-            <Limit name="measured-frame-rate-3840x2160" range="39-255" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- Jiade.zhang@MM.MediaServer.PLAYER, 2023/5/29, -->
+        <!-- Modify for CtsMediaTestCases  -->
+        <!-- <Limit name="measured-frame-rate-3840x2160" range="39-255" /> -->
+        <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-3840x2160" range="45-255" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         </MediaCodec>
         <MediaCodec name="c2.qti.av1.decoder" type="video/av01" update="true">
             <Limit name="measured-frame-rate-352x288" range="465-1900" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <Limit name="measured-frame-rate-640x360" range="500-1100" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="370-1550" />
-            <Limit name="measured-frame-rate-1280x720" range="270-2600" />
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/4/19, -->
+            <!-- <Limit name="measured-frame-rate-1280x720" range="270-2600" /> -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-1280x720" range="270-594" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-1920x1080" range="260-1200" />
             <Limit name="measured-frame-rate-3840x2160" range="67-505" />
         </MediaCodec>
         <MediaCodec name="c2.qti.av1.decoder.low_latency" type="video/av01" update="true">
             <Limit name="measured-frame-rate-352x288" range="390-1850" />
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <Limit name="measured-frame-rate-640x360" range="500-1100" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-720x480" range="380-1700" />
             <Limit name="measured-frame-rate-1280x720" range="315-1920" />
             <Limit name="measured-frame-rate-1920x1080" range="220-800" />
@@ -90,6 +129,15 @@
         -->
 
         <!-- C2 SW codecs -->
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/4/19, -->
+        <MediaCodec name="c2.android.av1.decoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-352x288" range="220-950" />
+            <Limit name="measured-frame-rate-640x360" range="120-830" />
+            <Limit name="measured-frame-rate-720x480" range="129-563" />
+            <Limit name="measured-frame-rate-1280x720" range="41-200" />
+        </MediaCodec>
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <!-- measured 98%:153-414 med:193/192 FLAKY(mn=61.7 < 96 - 414 < mx=423.7) -->
             <Limit name="measured-frame-rate-320x240" range="211-600" /> <!-- N=266 v98%=1.6 -->
@@ -123,12 +171,22 @@
         </MediaCodec>
         <MediaCodec name="c2.android.h263.decoder" type="video/3gpp" update="true">
             <!-- measured 98%:151-1143 med:437/432 FLAKY(111 - 972 < mx=1146.8) variance:2.8 -->
-            <Limit name="measured-frame-rate-176x144" range="800-2600" /> <!-- N=270 -->
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <!-- <Limit name="measured-frame-rate-176x144" range="800-2600" /> -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-176x144" range="800-1760" /> <!-- N=270 -->
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-352x288" range="620-1900" /> <!-- N=270 -->
         </MediaCodec>
         <MediaCodec name="c2.android.mpeg4.decoder" type="video/mp4v-es" update="true">
             <!-- measured 90%:149-1332 med:379/360 FLAKY(109 - 958 < mx=1400.6) RG.VARIANCE:2.1 -->
-            <Limit name="measured-frame-rate-176x144" range="865-2800" /> <!-- N=272 v90%=3.0 -->
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/6/25, -->
+            <!-- <Limit name="measured-frame-rate-176x144" range="865-2800" /> -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-176x144" range="865-1903" /> <!-- N=272 v90%=3.0 -->
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <Limit name="measured-frame-rate-480x360" range="728-1564" />
             <Limit name="measured-frame-rate-1280x720" range="319-714" />
         </MediaCodec>
@@ -137,13 +195,13 @@
     <Encoders>
         <!-- C2 HW encoders -->
         <MediaCodec name="c2.qti.avc.encoder" type="video/avc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="200-600" />
+            <Limit name="measured-frame-rate-320x240" range="287-633" />
             <Limit name="measured-frame-rate-720x480" range="120-260" />
             <Limit name="measured-frame-rate-1280x720" range="126-183" />
             <Limit name="measured-frame-rate-1920x1080" range="75-113" />
         </MediaCodec>
         <MediaCodec name="c2.qti.hevc.encoder" type="video/hevc" update="true">
-            <Limit name="measured-frame-rate-320x240" range="480-535" />
+            <Limit name="measured-frame-rate-320x240" range="280-618" />
             <Limit name="measured-frame-rate-720x480" range="165-210" />
             <Limit name="measured-frame-rate-1280x720" range="133-184" />
             <Limit name="measured-frame-rate-1920x1080" range="84-131" />
@@ -167,11 +225,24 @@
             <!-- measured 95%:144-637 med:343/343 FLAKY(mn=40.8 < 144 - 808 < mx=916.6) variance:2.1 -->
             <Limit name="measured-frame-rate-176x144" range="287-459" /> <!-- TWEAKED N=224 -->
         </MediaCodec>
+        <!-- #ifdef OPLUS_BUG_COMPATIBILITY -->
+        <!-- Xiang.Yang@MM.MediaServer.Record, 2023/4/18, -->
+        <MediaCodec name="c2.android.av1.encoder" type="video/av01" update="true">
+            <Limit name="measured-frame-rate-320x240" range="480-535" />
+            <Limit name="measured-frame-rate-720x480" range="165-210" />
+            <Limit name="measured-frame-rate-1280x720" range="30-66" />
+        </MediaCodec>
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
         <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true">
             <!-- measured 90%:42-420 med:146/160 FLAKY(mn=39.0 < 42 - 368 < mx=569.5) RG.VARIANCE:2.2 -->
             <Limit name="measured-frame-rate-320x240" range="140-980" /> <!-- SHOULDN'T HAVE TWEAKED N=266 v90%=3.2 -->
             <!-- measured 98%:29-166 med:66/63 FLAKY(24 - 166 < mx=166.5) variance:2.4 -->
-            <Limit name="measured-frame-rate-720x480" range="47-83" /> <!-- N=262 -->
+        <!-- #ifndef OPLUS_BUG_COMPATIBILITY -->
+        <!-- HuXin@MULTIMEDIA.MEDIASERVER.PLAYER, 2023/4/19, -->
+            <!-- <Limit name="measured-frame-rate-720x480" range="47-83" /> --> <!-- N=262 -->
+        <!-- #else //OPLUS_BUG_COMPATIBILITY -->
+            <Limit name="measured-frame-rate-720x480" range="122-268" />
+        <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
             <!-- measured 98%:11-68 med:30/30 FLAKY(mn=10.5 < 11 - 68 < mx=82.1) variance:2.5 -->
             <Limit name="measured-frame-rate-1280x720" range="30-200" /> <!-- TWEAKED N=236 -->
             <!-- measured 98%:10-38 med:18/18 FLAKY(mn=5.2 < 9 - 38 < mx=38.8) -->

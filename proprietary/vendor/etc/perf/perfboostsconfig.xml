@@ -535,50 +535,52 @@
         <!-- DISPLAY EARLY WAKEUP opcode, value. Don't need 0x42C20000, removed it-->
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="60"
-                Resources="0x40800100, 700, 0x4281C000, 25, 0x41C0C000, 0" />
+                Resources="0x40800100, 700, 0x4281C000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="90"
-                Resources="0x40800100, 700, 0x4281C000, 17, 0x41C0C000, 0" />
+                Resources="0x40800100, 700, 0x4281C000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="120"
-                Resources="0x4281C000, 13, 0x41C0C000, 0" />
+                Resources="0x4281C000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="144"
-                Resources="0x4281C000, 11, 0x41C0C000, 0" />
+                Resources="0x4281C000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="180"
-                Resources="0x4281C000, 9, 0x41C0C000, 0" />
+                Resources="0x4281C000, 1, 0x41C0C000, 0" />
         <Config
                 Id="0x00001098" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="240"
-                Resources="0x4281C000, 7, 0x41C0C000, 0" />
+                Resources="0x4281C000, 1, 0x41C0C000, 0" />
 
     <!-- PiCard Early Wakeup GPU only -->
         <!-- 60, 90fps: CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- 120fps & above: PID Affine opcode, value -->
         <!-- GPU DISABLE resource opcode, value. Don't need 0x42C20000, removed it-->
+        <!-- GPU TOUCH WAKE resource opcode, value-->
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="60"
-                Resources="0x40800100, 700, 0x4281C000, 25" />
+                Resources="0x40800100, 700, 0x4281C000, 1" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="90"
-                Resources="0x40800100, 700, 0x4281C000, 17" />
+                Resources="0x40800100, 700, 0x4281C000, 1" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="120"
-                Resources="0x4281C000, 13" />
+                Resources="0x4281C000, 1" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="144"
-                Resources="0x4281C000, 11" />
+                Resources="0x4281C000, 1" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="180"
-                Resources="0x4281C000, 9" />
+                Resources="0x4281C000, 1" />
         <Config
                 Id="0x00001099" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="240"
-                Resources="0x4281C000, 7" />
+                Resources="0x4281C000, 1" />
 
     <!-- PiCard Early Wakeup Display only -->
         <!-- 60, 90fps: CPUBOOST_MIN_FREQ LITTLE Core resource opcode, value-->
         <!-- 120fps & above: PID Affine opcode, value -->
         <!-- DISPLAY EARLY WAKEUP opcode, value. Don't need 0x42C20000, removed it-->
+        <!-- GPU TOUCH WAKE resource opcode, value-->
         <Config
                 Id="0x0000109A" Type="0" Enable="true" Target="kalama" Timeout="2000" Fps="60"
                 Resources="0x40800100, 700, 0x41C0C000, 0" />

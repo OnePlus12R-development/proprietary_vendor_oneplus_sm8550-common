@@ -105,7 +105,7 @@
     <CamcorderProfiles cameraId="0">
     -->
     <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
-    <CamcorderProfiles cameraId="0" startOffsetMs="350">
+    <CamcorderProfiles cameraId="0" startOffsetMs="475">
     <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">
@@ -443,7 +443,7 @@
     <CamcorderProfiles cameraId="1">
     -->
     <!-- #else  //OPLUS_BUG_COMPATIBILITY -->
-    <CamcorderProfiles cameraId="1" startOffsetMs="350">
+    <CamcorderProfiles cameraId="1" startOffsetMs="475">
     <!-- #endif //OPLUS_BUG_COMPATIBILITY -->
 
     <EncoderProfile quality="low" fileFormat="3gp" duration="30">

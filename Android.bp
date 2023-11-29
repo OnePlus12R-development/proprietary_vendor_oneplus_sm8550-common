@@ -261,17 +261,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "PowerOffAlarm",
-	owner: "oneplus",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
 	name: "uimgbaservice",
 	owner: "oneplus",
 	apk: "proprietary/product/app/uimgbaservice/uimgbaservice.apk",
@@ -455,13 +444,6 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.qti.hardware.alarm-V1.0-java",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
 	name: "vendor.qti.ims.connection-V1.0-java",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar"],
@@ -532,15 +514,6 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.contexthub-service.qmi",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "android.hardware.gnss-aidl-service-qti",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml",
@@ -553,60 +526,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.radio.config",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.config.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.data",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.data.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.messaging",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.messaging.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.modem",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.modem.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.network",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.network.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.sim",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.sim.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "android.hardware.radio.voice",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.radio.voice.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -649,15 +568,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "dataconnection-saidl",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/dataconnection-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "deviceinfo-saidl",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/deviceinfo-saidl.xml",
@@ -676,36 +586,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_panelchaplin",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_panelchaplin.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "qcrilhook-saidl",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/qcrilhook-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "qms-saidl",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/qms-saidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "qtiradio-saidl",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -793,24 +676,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.am",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.am.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.ims",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.qtiradioconfig",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml",
@@ -847,6 +712,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "android.hardware.contexthub-service.qmi",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/android.hardware.contexthub-service.qmi.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "device_manifest_communication_center_aidl",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml",
@@ -856,9 +730,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_cameraextension",
+	name: "manifest_oplus_cameraextension_aidl",
 	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension.xml",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_cameraextension_aidl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
@@ -883,9 +757,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_oplus_fingerprint",
+	name: "manifest_oplus_fingerprint_aidl",
 	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,

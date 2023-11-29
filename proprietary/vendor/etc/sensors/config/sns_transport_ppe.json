@@ -10,6 +10,6 @@
         "owner": "sns_tppe",
         "filter_msg_id_1" : { "type": "int", "ver": "0", "data": "1143" }
       },
-      "batch_period_us": { "type": "int", "ver": "0", "data": "1000000" }
+      "batch_period_us": { "type": "int", "ver": "0", "data": "3000000" }
     }
 }

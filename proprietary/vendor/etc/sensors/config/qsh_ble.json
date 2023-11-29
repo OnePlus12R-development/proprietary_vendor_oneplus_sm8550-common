@@ -6,6 +6,10 @@
   "qsh_ble_config":{
     "owner": "qsh_ble",
 
+    "passive_or_active_scan":{ "type": "str", "ver": "0",
+        "data": "active"
+    },
+
     "scan_mode_low_power":{ "type": "str", "ver": "0",
         "data": "1400,140,1"
     },

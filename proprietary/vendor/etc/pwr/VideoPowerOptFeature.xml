@@ -17,7 +17,7 @@
    <Name>VideoPowerOptFeature</Name>
    <Libname>libvideooptfeature.so</Libname>
    <Configs>
-        <VIDEO_OPT>1</VIDEO_OPT>
+        <VIDEO_OPT>0</VIDEO_OPT>
         <BROWSER_OPT>1</BROWSER_OPT>
         <MAX_CONTENT_FPS>30</MAX_CONTENT_FPS>
         <MAX_HW_CONTENT_FPS>120</MAX_HW_CONTENT_FPS>
