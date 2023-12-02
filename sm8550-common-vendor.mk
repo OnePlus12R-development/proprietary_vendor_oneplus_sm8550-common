@@ -2665,7 +2665,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.sim \
     android.hardware.radio.voice \
     android.hardware.security.keymint-service-qti \
-    bluetooth_audio \
     bttpi-saidl \
     c2_manifest_vendor \
     c2_manifest_vendor_audio \
