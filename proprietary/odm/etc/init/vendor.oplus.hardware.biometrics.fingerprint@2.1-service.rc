@@ -22,6 +22,3 @@ on boot
     chown system system /sys/kernel/oplus_display/nit_brightness
 #-----------------------   for optical sensor end     ---------------------
 
-#Tanyue.Zeng@BSP.Fingerprint.Basic, 2023/06/29, modify for send dcs fail
-on property:sys.boot_completed=1
-    setprop vendor.oplus.biometrics.fingerprint.boot_completed 1

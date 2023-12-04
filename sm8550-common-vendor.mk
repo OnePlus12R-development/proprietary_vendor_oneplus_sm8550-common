@@ -749,8 +749,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpPrepare.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnHtpV73Stub.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpV73Stub.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnSystem.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnSystem.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/android.hardware.biometrics.common-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.biometrics.common-V1-ndk.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/android.hardware.biometrics.fingerprint-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/android.hardware.biometrics.fingerprint-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx581.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx581.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx709.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx709.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx800.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx800.so \
@@ -993,6 +991,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libwrapper_te.so:$(TARGET_COPY_OUT_ODM)/lib64/libwrapper_te.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libyuv2.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuv2.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libyuvwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuvwrapper.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs-V1-ndk.so \
@@ -2649,7 +2648,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_cameraextension_aidl \
     manifest_oplus_cammidasservice_aidl \
     manifest_oplus_cwb \
-    manifest_oplus_fingerprint_aidl \
+    manifest_oplus_fingerprint \
     manifest_oplus_sendextcamcmd \
     manifest_oplus_stability_project_aidl \
     manifest_performance_aidl \
