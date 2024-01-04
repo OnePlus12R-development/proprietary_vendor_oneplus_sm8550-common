@@ -246,6 +246,16 @@
         "app_disable_fb_evict": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
+        ],
+        "app_disable_fb_thirdparty_activity": [
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI00",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI1",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI2",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI3",
+            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI4",
+            "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+            "com.tencent.mm.plugin.flash.FaceFlashUI",
+            "com.tencent.mm.plugin.flash.action.FaceFlashActionUI"
         ]
     },
     "com.tencent.qqmusic": {
