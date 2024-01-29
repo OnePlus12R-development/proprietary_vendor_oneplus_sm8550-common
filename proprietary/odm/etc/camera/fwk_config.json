@@ -392,8 +392,8 @@
     },
     "com.whatsapp": {
         "needlimitSizeForSurface": true,
-        "limitWidthForSurface": 1920,
-        "limitHeightForSurface": 1080,
+        "limitWidthForSurface": 3840,
+        "limitHeightForSurface": 2160,
         "app_enable_rio": true
     },
     "com.snapchat.android": {
