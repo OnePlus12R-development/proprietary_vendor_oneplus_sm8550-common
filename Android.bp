@@ -277,6 +277,7 @@ android_app_import {
 	name: "EuiccGoogle",
 	owner: "oneplus",
 	apk: "proprietary/product/priv-app/EuiccGoogle/EuiccGoogle.apk",
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
