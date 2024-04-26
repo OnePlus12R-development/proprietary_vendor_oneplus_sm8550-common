@@ -18,7 +18,7 @@
     "product": "8550",
     "VENDOR": "QCOM",
     "BrandModels": "BrandA_oplus",
-    "SNPE_VERSION": "2.2.1.3718",
+    "SNPE_VERSION": "2.3.7.4013",
     "param":
     [
         {
@@ -34,7 +34,7 @@
             "SegModel_Out_WHC":"432,576,3",
             "DepthModel_In_WHC":"416,560,3",
             "DepthModel_Out_WHC":"416,560,3",
-            "DepthVersion" : 3.0,
+            "DepthVersion" : 2.0,
             "SegEnable": true,
             "DepthEnable": true,
             "MattingEnable": true,
@@ -45,8 +45,8 @@
             "HairMattingImageHeight": 1536,
             "HairMattingInputDelta": 0.003913909197,
             "HairMattingInputOffset": 0,
-            "HairMattingOutputDelta": 0.004477225710,
-            "HairMattingOutputOffset": 25,
+            "HairMattingOutputDelta": 0.004151322879,
+            "HairMattingOutputOffset": 12,
             "HairMattingROIMode": "inner",
             "NeonPerformanceMode":0,
             "BokehLutPerformanceMode":0
