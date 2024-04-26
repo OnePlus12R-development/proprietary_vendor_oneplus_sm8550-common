@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8550-common
 
 PRODUCT_COPY_FILES += \
-    vendor/oneplus/sm8550-common/proprietary/product/etc/permissions/privapp-permissions-euiccgoogle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-euiccgoogle.xml \
     vendor/oneplus/sm8550-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor-oplus-hardware-performance-V1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor-oplus-hardware-performance-V1-service \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
@@ -19,6 +18,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/bin/oplus_sensor_fb:$(TARGET_COPY_OUT_ODM)/bin/oplus_sensor_fb \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/AiFace.json:$(TARGET_COPY_OUT_ODM)/etc/camera/AiFace.json \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode:$(TARGET_COPY_OUT_ODM)/etc/camera/M_FaceAttribute_RGB_age_gender_1.7.1.model.hardcode \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/aiboost_qnn_htp2.3.1_159494848803313195.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.3.1_159494848803313195.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/aiboost_qnn_htp2.3.1_767789436570576370.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/aiboost_qnn_htp2.3.1_767789436570576370.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/anc/fusion_model:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/anc/fusion_model_post:$(TARGET_COPY_OUT_ODM)/etc/camera/anc/fusion_model_post \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
@@ -37,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/capture_lutportrait_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/capture_lutportrait_params.json \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/capture_neonportrait_params.json:$(TARGET_COPY_OUT_ODM)/etc/camera/capture_neonportrait_params.json \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_OPlus_EF017_UW_snapshot.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/cfr_bin/CFR_imx355.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_imx355.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/cfr_bin/CFR_imx581.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_imx581.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/cfr_bin/CFR_imx709.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_imx709.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/cfr_bin/CFR_imx890.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/cfr_bin/CFR_imx890.bin \
@@ -57,7 +59,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/dng/ToneCurve_imx709_3.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_imx709_3.txt \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/dng/ToneCurve_imx890_0.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_imx890_0.txt \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/eis_camera.vcfg \
-    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/facesr_hd_composite_ref_4.1.18_qcom8550_ppl3_ocl.model:$(TARGET_COPY_OUT_ODM)/etc/camera/facesr_hd_composite_ref_4.1.18_qcom8550_ppl3_ocl.model \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_default:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_default \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/000.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/000_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/000_pre.bin \
@@ -105,6 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/212_pre.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/212_pre.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/213.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/213.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/AIdeblemishSnapMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/AIdeblemishSnapMask.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/AIdeblemishSnapMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/AIdeblemishSnapMask.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/DREAM_1_4_1005_838.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/DREAM_1_4_1005_838.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/DREAM_4_5_354_654.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/DREAM_4_5_354_654.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/EYES_MUTIL_3_4_354_654.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/EYES_MUTIL_3_4_354_654.bin \
@@ -148,9 +150,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/SkinLUT_Red.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/SkinLUT_Red.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/UNIQUE_EYES_1_4_1005_838.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/UNIQUE_EYES_1_4_1005_838.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/beauty_body.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/beauty_body.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/brightLut.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/brightLut.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/brightLut.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/brightLut.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eyeBright.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyeBright.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eye_retouch_chinese.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eye_retouch_chinese.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eyesMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMask.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eyesMask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMask.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eyesMaskNew.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMaskNew.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/eyesMaskNew.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/eyesMaskNew.png \
@@ -158,8 +162,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/face_retouch_chinese.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/face_retouch_chinese.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/face_retouch_pre_chinese.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/face_retouch_pre_chinese.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/mouthmask.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/mouthmask.png \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/preSkinmask137.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/preSkinmask137.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/preSkinmask137.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/preSkinmask137.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/preSkinmask296.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/preSkinmask296.png \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/redToneLut.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/redToneLut.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/redToneLut.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/redToneLut.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/skinLUTs00.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs00.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/skinLUTs01.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/skinLUTs01.bin \
@@ -194,6 +200,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/snapMouthMask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapMouthMask.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/snapSkinmask.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/snapSkinmask.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/unify_skin_base.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/unify_skin_base.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/whiteToneLut.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/whiteToneLut.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fb_model/whiteToneLut.png:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_model/whiteToneLut.png \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fdc_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_cl.cache \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/fdc_lite_cl.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/fdc_lite_cl.cache \
@@ -572,10 +579,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/BeardSharp.frag:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.frag \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/BeardSharp.vert:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/BeardSharp.vert \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreAddSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreAddSRBinary.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreBilaFilterBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreBilaFilterBinary.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreBilaFilterBinaryV.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreBilaFilterBinaryV.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreBilaFilterMixBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreBilaFilterMixBinary.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreBilaFilterMixByFaceTargetBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreBilaFilterMixByFaceTargetBinary.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreCalVarBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalVarBinary.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreCalcSRBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalcSRBinary.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/PreCalculateOutTex.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/PreCalculateOutTex.bin \
@@ -653,11 +656,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/snapTex2HWBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/snapTex2HWBinary.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/snapYUV420sp2RGBBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/snapYUV420sp2RGBBinary.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/pfb_bin/snapseparateYUV2RGBBinary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/pfb_bin/snapseparateYUV2RGBBinary.bin \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/qnn_binary_10332766617109390687.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/qnn_binary_10332766617109390687.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/selfbokehParam.json:$(TARGET_COPY_OUT_ODM)/etc/camera/selfbokehParam.json \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/selfbokehmodel.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/selfbokehmodel.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/singleblur/personseg.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/personseg.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/singleblur/preview_seg.json:$(TARGET_COPY_OUT_ODM)/etc/camera/singleblur/preview_seg.json \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/spectrum_test_data_golden:$(TARGET_COPY_OUT_ODM)/etc/camera/spectrum_test_data_golden \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/stereoParams.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/stereoParams.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/sticker/M_SenseME_Action_5.2.12.model:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/M_SenseME_Action_5.2.12.model \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/sticker/material/animoji/data.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/data.zip \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip:$(TARGET_COPY_OUT_ODM)/etc/camera/sticker/material/animoji/snowleopard_v_0_0_0_9.zip \
@@ -698,25 +703,11 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service-lazy.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
-    vendor/oneplus/sm8550-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
-    vendor/oneplus/sm8550-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/permissions/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.context_hub.xml \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/22861/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22861/bms_heating_config.txt \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/22861/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22861/charging_hyper_mode_config.txt \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/22861/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22861/charging_thermal_config_default.txt \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/fastchg/smart_chg_config_table.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/smart_chg_config_table.txt \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUDG4UHDC-B0E1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUDG4UHDC-B0E1.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUEG4RHHD-B0G1.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUEG8UHDC-B0E1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUEG8UHDC-B0E1.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUFG8RHDB-B0E1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUFG8RHDB-B0E1.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/SAMSUNG-KLUFG8RHHD-B0G1.bin:$(TARGET_COPY_OUT_ODM)/firmware/ufs/SAMSUNG-KLUFG8RHHD-B0G1.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh:$(TARGET_COPY_OUT_ODM)/firmware/ufs/move_target_ufs_fw_to_oplusreserve1.sh \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib/libc2ffmpegutils.so:$(TARGET_COPY_OUT_ODM)/lib/libc2ffmpegutils.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/libc2filterplugin.so:$(TARGET_COPY_OUT_ODM)/lib/libc2filterplugin.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/libosie_process.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_process.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/libosie_stub.so:$(TARGET_COPY_OUT_ODM)/lib/libosie_stub.so \
-    vendor/oneplus/sm8550-common/proprietary/vendor/lib/libsn100u_fw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsn100u_fw.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/rfsa/adsp/aiboost/libQnnHtpV73Skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libQnnHtpV73Skel.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/aiboost/libaiboostubwc_skel.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib/rfsa/adsp/capi_v3_oprec.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/capi_v3_oprec.so \
@@ -749,17 +740,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnHtpPrepare.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpPrepare.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnHtpV73Stub.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnHtpV73Stub.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/aiboost/libQnnSystem.so:$(TARGET_COPY_OUT_ODM)/lib64/aiboost/libQnnSystem.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx581.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx581.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx709.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx709.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx800.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx800.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.imx890.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.imx890.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensor.s5k3p9.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.s5k3p9.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensormodule.qtech_imx581.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qtech_imx581.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensormodule.qtech_imx709.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qtech_imx709.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensormodule.qtech_imx890.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.qtech_imx890.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.sensormodule.sunny_s5k3p9.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.sunny_s5k3p9.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.tuned.qtech_imx581.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_imx581.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.tuned.qtech_imx709.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_imx709.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.tuned.qtech_imx890.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.qtech_imx890.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/com.qti.tuned.sunny_s5k3p9.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.sunny_s5k3p9.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.node.preview.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.preview.so \
@@ -768,10 +752,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.node.sstabphoto.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.sstabphoto.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.node.sstabrealt.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.sstabrealt.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.node.videoenhance.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.node.videoenhance.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.stats.aec.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.stats.aec.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.stats.af.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.stats.af.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.stats.awb.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.stats.awb.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/components/com.oplus.stats.pdlib.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/components/com.oplus.stats.pdlib.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreview.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/fdconfigvideo.bin \
@@ -780,10 +760,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libaecCustomParam_Cam1.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libaecCustomParam_Cam1.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libaecCustomParam_Cam2.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libaecCustomParam_Cam2.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libaecCustomParam_Cam3.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libaecCustomParam_Cam3.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libafCustomParamFrontMain.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParamFrontMain.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libafCustomParamMain.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParamMain.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libafCustomParamTele.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParamTele.bin \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/libafCustomParamWide.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/libafCustomParamWide.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/camera/revision.txt:$(TARGET_COPY_OUT_ODM)/lib64/camera/revision.txt \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/hw/camera.oemlayer.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/camera.oemlayer.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/vendor.pixelworks.hardware.display@1.0-impl-1.2-i7.so \
@@ -805,16 +781,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCOppLceTonemapAPI.so:$(TARGET_COPY_OUT_ODM)/lib64/libCOppLceTonemapAPI.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libCS.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCaptureBokeh.so:$(TARGET_COPY_OUT_ODM)/lib64/libCaptureBokeh.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipCommon.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipCommon.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParamProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParamProcess.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter0.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter0.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter1.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter1.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter2.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter2.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter3.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter3.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter4.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter4.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter5.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter5.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipParameter6.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipParameter6.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libCipo_awb.so:$(TARGET_COPY_OUT_ODM)/lib64/libCipo_awb.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libDeVIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libDeVIS.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libEIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libEIS.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libFDClite.so:$(TARGET_COPY_OUT_ODM)/lib64/libFDClite.so \
@@ -824,6 +790,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libFaceBeautyPre.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceBeautyPre.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libFaceDistortionCorrection.so:$(TARGET_COPY_OUT_ODM)/lib64/libFaceDistortionCorrection.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libFilterWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libFilterWrapper.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libHDRDetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libHDRDetection.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libHIS.so:$(TARGET_COPY_OUT_ODM)/lib64/libHIS.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libImageWarpMask.so:$(TARGET_COPY_OUT_ODM)/lib64/libImageWarpMask.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOGLManager.so:$(TARGET_COPY_OUT_ODM)/lib64/libOGLManager.so \
@@ -833,8 +800,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOPAlgoCamAiUnifySkin.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPAlgoCamAiUnifySkin.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOPAlgoCamFaceBeautyCap.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPAlgoCamFaceBeautyCap.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOPAlgoCamSinglePortrait.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPAlgoCamSinglePortrait.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOPLUSMotionDetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPLUSMotionDetection.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOPLUS_SCPortrait.so:$(TARGET_COPY_OUT_ODM)/lib64/libOPLUS_SCPortrait.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOplusPDCore.so:$(TARGET_COPY_OUT_ODM)/lib64/libOplusPDCore.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libOpo_awb.so:$(TARGET_COPY_OUT_ODM)/lib64/libOpo_awb.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libPerfectColor.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectColor.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libPerfectlyClearCruxOpt.so:$(TARGET_COPY_OUT_ODM)/lib64/libPerfectlyClearCruxOpt.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libPlatformValidatorShared.so:$(TARGET_COPY_OUT_ODM)/lib64/libPlatformValidatorShared.so \
@@ -855,6 +824,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libSnpeHtpV73Stub.so:$(TARGET_COPY_OUT_ODM)/lib64/libSnpeHtpV73Stub.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libSuperRaw.so:$(TARGET_COPY_OUT_ODM)/lib64/libSuperRaw.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libSuperTextWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libSuperTextWrapper.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libUpScale.so:$(TARGET_COPY_OUT_ODM)/lib64/libUpScale.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libVDBayerHDR.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDBayerHDR.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libVDBlurless.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDBlurless.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libVDExternal.so:$(TARGET_COPY_OUT_ODM)/lib64/libVDExternal.so \
@@ -872,6 +842,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libafCustomParamParser.so:$(TARGET_COPY_OUT_ODM)/lib64/libafCustomParamParser.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost_hexagon.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_hexagon.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost_qnn_external_delegate_te.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_qnn_external_delegate_te.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost_qnn_sr.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_qnn_sr.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost_sr.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_sr.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libaiboost_te.so:$(TARGET_COPY_OUT_ODM)/lib64/libaiboost_te.so \
@@ -889,7 +860,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libapsexif.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsexif.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libapsjpeg.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsjpeg.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libapspng.so:$(TARGET_COPY_OUT_ODM)/lib64/libapspng.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libapsultrahdr.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsultrahdr.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libapsyuv.so:$(TARGET_COPY_OUT_ODM)/lib64/libapsyuv.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarc.ion.so:$(TARGET_COPY_OUT_ODM)/lib64/libarc.ion.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_distortion_correction.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_dual_sat.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dual_sat.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_dual_zoomtranslator.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dual_zoomtranslator.so \
@@ -898,8 +871,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_dualcam_refocus_preview.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_preview.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_dualcam_refocus_uw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_uw.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_eis_wrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_eis_wrapper.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_hdr_couple_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_couple_api.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_hdr_denoise_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_hdr_denoise_api.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_high_dynamic_range_couple.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_couple.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_high_dynamic_range_couple_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_couple_v4.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_high_dynamic_range_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_high_dynamic_range_v4.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_lensstaindetection.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_lensstaindetection.so \
@@ -915,16 +890,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_smart_denoise_v4.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_smart_denoise_v4.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_triple_sat.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_triple_sat.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_triple_zoomtranslator.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_triple_zoomtranslator.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_fusion_raw_grf.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_fusion_raw_grf.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_fusion_raw_super_night.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_fusion_raw_super_night.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_hdr_grf.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_hdr_grf.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_hdr_raw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_hdr_raw.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_hdr_raw_front.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_hdr_raw_front.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_turbo_raw.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_turbo_raw.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_ultra_high_dynamic_range.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_ultra_high_dynamic_range.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libarcsoft_videoautozoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_videoautozoom.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libc++_shared.so:$(TARGET_COPY_OUT_ODM)/lib64/libc++_shared.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libc2ffmpegutils.so:$(TARGET_COPY_OUT_ODM)/lib64/libc2ffmpegutils.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libc2filterplugin.so:$(TARGET_COPY_OUT_ODM)/lib64/libc2filterplugin.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libcalculator.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalculator.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libcalculator_htp.so:$(TARGET_COPY_OUT_ODM)/lib64/libcalculator_htp.so \
@@ -949,6 +923,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libml_util.so:$(TARGET_COPY_OUT_ODM)/lib64/libml_util.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libnpu.so:$(TARGET_COPY_OUT_ODM)/lib64/libnpu.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libocce3a.so:$(TARGET_COPY_OUT_ODM)/lib64/libocce3a.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libolc_vnd.so:$(TARGET_COPY_OUT_ODM)/lib64/libolc_vnd.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/liboplusblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplusblur_capture_api.so \
@@ -956,8 +931,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/liboptical_zoom_vs.so:$(TARGET_COPY_OUT_ODM)/lib64/liboptical_zoom_vs.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libosenseaidlhalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libosenseaidlhalclient.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/liboutils.so:$(TARGET_COPY_OUT_ODM)/lib64/liboutils.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libpdCustomParamParser.so:$(TARGET_COPY_OUT_ODM)/lib64/libpdCustomParamParser.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libpngwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpngwrapper.so \
-    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libportrait_repair_ppl3_ocl.so:$(TARGET_COPY_OUT_ODM)/lib64/libportrait_repair_ppl3_ocl.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libportrait_repair_qnn.so:$(TARGET_COPY_OUT_ODM)/lib64/libportrait_repair_qnn.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisPCS.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
@@ -972,6 +948,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libremosaiclib_s5kjn1.so:$(TARGET_COPY_OUT_ODM)/lib64/libremosaiclib_s5kjn1.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/librmsclib1.so:$(TARGET_COPY_OUT_ODM)/lib64/librmsclib1.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libsaveshaderbin.so:$(TARGET_COPY_OUT_ODM)/lib64/libsaveshaderbin.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libsdk_sr_ref.so:$(TARGET_COPY_OUT_ODM)/lib64/libsdk_sr_ref.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libsharebuffer.so:$(TARGET_COPY_OUT_ODM)/lib64/libsharebuffer.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libsharebuffer_impl.so:$(TARGET_COPY_OUT_ODM)/lib64/libsharebuffer_impl.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libsnapdragoncolor-pxlw.so:$(TARGET_COPY_OUT_ODM)/lib64/libsnapdragoncolor-pxlw.so \
@@ -984,6 +961,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libstfd_mobile_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstfd_mobile_api.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libtfa98xx.so:$(TARGET_COPY_OUT_ODM)/lib64/libtfa98xx.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libthirdcapability.so:$(TARGET_COPY_OUT_ODM)/lib64/libthirdcapability.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/libtrace.so:$(TARGET_COPY_OUT_ODM)/lib64/libtrace.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_optical_zoom_control.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_ODM)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libui.so:$(TARGET_COPY_OUT_ODM)/lib64/libui.so \
@@ -991,6 +969,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libwrapper_te.so:$(TARGET_COPY_OUT_ODM)/lib64/libwrapper_te.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libyuv2.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuv2.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/libyuvwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libyuvwrapper.so \
+    vendor/oneplus/sm8550-common/proprietary/odm/lib64/sr_ref_models.bin:$(TARGET_COPY_OUT_ODM)/lib64/sr_ref_models.bin \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cameraextension-V1-service-impl.so \
     vendor/oneplus/sm8550-common/proprietary/odm/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.cammidasservice-V1-ndk.so \
@@ -1240,7 +1219,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/batching.conf:$(TARGET_COPY_OUT_VENDOR)/etc/batching.conf \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
-    vendor/oneplus/sm8550-common/proprietary/vendor/etc/charger_fw_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fw_fstab.qti \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/chre/preloaded_nanoapps.json:$(TARGET_COPY_OUT_VENDOR)/etc/chre/preloaded_nanoapps.json \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/clstc_config_library.xml:$(TARGET_COPY_OUT_VENDOR)/etc/clstc_config_library.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -1286,6 +1264,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
+    vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_AA551_P_3_A0004_dsc_cmd_mode_panel.json \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.json \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.json \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/display/qdcm_calib_data_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.json \
@@ -1379,13 +1358,13 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/lm/prekill/prekill_6GB.data:$(TARGET_COPY_OUT_VENDOR)/etc/lm/prekill/prekill_6GB.data \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/lm/sPLHFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/sPLHFeature.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/lowi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lowi.conf \
+    vendor/oneplus/sm8550-common/proprietary/vendor/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_AA551_P_3_A0004_dsc_cmd_mode_panel.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/ltm_config_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF07_CS_dsc_cmd_mode_panel.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/ltm_config_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF07_FS_dsc_cmd_mode_panel.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/ltm_config_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF08_CS_dsc_cmd_mode_panel.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/ltm_config_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ltm_config_samsung_AMB670YF08_FS_dsc_cmd_mode_panel.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_codecs_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama.xml \
-    vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_codecs_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_kalama_vendor.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_codecs_performance_kalama.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_codecs_performance_kalama_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_kalama_vendor.xml \
     vendor/oneplus/sm8550-common/proprietary/vendor/etc/media_kalama/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_kalama/video_system_specs.json \
@@ -2426,7 +2405,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.sendextcamcmd-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so \
-    vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display-V1-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display-V1-ndk.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.0.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.1.so \
     vendor/oneplus/sm8550-common/proprietary/vendor/lib64/vendor.pixelworks.hardware.display@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.pixelworks.hardware.display@1.2.so \
@@ -2606,7 +2584,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
-    EuiccGoogle \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
     ImsRcsService \
