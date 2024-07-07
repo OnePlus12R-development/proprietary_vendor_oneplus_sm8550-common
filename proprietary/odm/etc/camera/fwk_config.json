@@ -260,8 +260,6 @@
         "previewSizeForAPI1Height": 1080
     },
     "com.tencent.mm": {
-        "previewSizeForAPI1Width": 1920,
-        "previewSizeForAPI1Height": 1080,
         "app_enable_rio": true,
         "requesttimeout": 10,
         "app_disable_fb_evict": true,
@@ -333,11 +331,6 @@
     "net.one97.paytm": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080
-    },
-    "im.thebot.messenger": {
-        "previewSizeForAPI1Width": 1920,
-        "previewSizeForAPI1Height": 1080,
-        "needLimitFpsForAPI1": true
     },
     "com.tencent.av.ui.AVActivity": {
         "minVideoCallFps": 15,
@@ -444,9 +437,6 @@
         "maxPreviewHeightForAPI2cameraId0": 1080
     },
     "com.whatsapp": {
-        "needlimitSizeForSurface": true,
-        "limitWidthForSurface": 1920,
-        "limitHeightForSurface": 1080,
         "app_enable_rio": true
     },
     "com.wuba": {
