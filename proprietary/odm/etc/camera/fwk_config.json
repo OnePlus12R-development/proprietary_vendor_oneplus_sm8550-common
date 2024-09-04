@@ -262,6 +262,8 @@
     "com.tencent.mm": {
         "app_enable_rio": true,
         "requesttimeout": 10,
+        "scan_zoom_value": 1.26,
+        "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
         "app_disable_fb_evict": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
