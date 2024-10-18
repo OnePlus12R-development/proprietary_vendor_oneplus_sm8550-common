@@ -51,6 +51,8 @@
         "feature_syscamera_override_dataspace_enable": true,
         "feature_camerasdk_override_dataspace_enable": true,
         "feature_rio_enable": true,
+        "feature_explorer_enable": true,
+        "explorer_override_cost": 99,
         "limit_3rd_app_size": [
             "com.mt.mtxx.mtxx.sub.preview",
             "com.benqu.wuta.sub.preview",
@@ -264,6 +266,7 @@
         "requesttimeout": 10,
         "scan_zoom_value": 1.26,
         "scan_activity_name": "com.tencent.mm.plugin.scanner.ui.BaseScanUI",
+        "supportExplorerCameraMask": 3,
         "app_disable_fb_evict": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
