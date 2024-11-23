@@ -1,0 +1,44 @@
+#
+# Copyright (c) 2022 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+
+#ifdef OPLUS_FEATURE_DEVICE_LOG
+#ZhuYan@Network.ARCH.14730, 2022/06/15, Add for customized on device log
+on early-init
+    chown system system /sys/devices/soc0/select_image
+    chown system system /sys/devices/soc0/image_version
+    chown system system /sys/devices/soc0/image_variant
+    chown system system /sys/devices/soc0/image_crm_version
+
+on early-boot
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etf/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/enable_sink
+    chown system system /sys/bus/coresight/devices/coresight-tmc-etr1/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/curr_sink
+    chown system system /sys/bus/coresight/devices/coresight-tpiu/out_mode
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/enable_source
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/enable
+    chown system system /sys/bus/coresight/devices/coresight-stm/hwevent_enable
+    chown system system /sys/bus/coresight/devices/coresight-hwevent/setreg
+    chown system system /sys/bus/coresight/devices/coresight-swao-csr/timestamp
+    chown system system /sys/bus/coresight/devices/coresight-modem-diag/enable_source
+#endif
+
+on early-boot
+    start vendor.diag-router
+
+service vendor.diag-router /vendor/bin/diag-router
+    class hal
+    user system
+    group system
+    capabilities KILL
+    disabled
+
