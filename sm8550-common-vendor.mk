@@ -7,8 +7,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8550-common/proprietary/product/etc/sysconfig/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/com.android.hotwordenrollment.common.util.xml \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
+    vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8550-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service-lazy.rc \
@@ -1122,6 +1124,9 @@ PRODUCT_PACKAGES += \
     libc++_shared \
     libcommcenterfw \
     libcommcenterutils \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
     libdmtp-protos-lite \
     libdmtp \
     libdmtpclient \
@@ -1138,8 +1143,13 @@ PRODUCT_PACKAGES += \
     libpwirisservicei7 \
     libpwirissoft \
     libpwsoftirisPCS \
+    libqtigef \
     libsnapdragoncolor-pxlw \
     libtfa98xx \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
     vendor.oplus.hardware.commondcs-V1-ndk \
     vendor.oplus.hardware.communicationcenter-V1-ndk \
     vendor.oplus.hardware.olc2-V1-ndk \
@@ -1231,8 +1241,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
     vendor.qti.hardware.vpp@2.0-service.xml \
     vendor.qti.hardware.wifidisplaysession-service.xml \
+    libdapparamstorage_v3_6_etc \
+    libdeccfg_v3_6_etc \
+    libdlbdsservice_v3_6_etc \
+    libqtigef_etc \
+    libstagefright_soft_ddpdec_etc \
+    libstagefrightdolby_etc \
+    libhwdap_v3_6_etc \
+    libswdap_v3_6_etc \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc \
+    vendor.dolby_v3_6.hardware.dms360@2.0_etc \
     android.hardware.contexthub-service.qmi.xml \
     device_manifest_communication_center_aidl.xml \
+    manifest_dax_dolby_v3_6.xml \
     manifest_oplus_cwb.xml \
     manifest_oplus_fingerprint.xml \
     manifest_oplus_stability_project_aidl.xml \
@@ -1336,6 +1357,7 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice64 \
     vendor-oplus-hardware-performance-V1-service \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature.irisfeature-service \
@@ -1343,6 +1365,16 @@ PRODUCT_PACKAGES += \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \
+    libdapparamstorage_v3_6_etc_libdapparamstorage_v3_6_symlink32 \
+    libdeccfg_v3_6_etc_libdeccfg_v3_6_symlink32 \
+    libdlbdsservice_v3_6_etc_libdlbdsservice_v3_6_symlink32 \
+    libqtigef_etc_libqtigef_symlink32 \
+    libstagefright_soft_ddpdec_etc_libstagefright_soft_ddpdec_symlink32 \
+    libstagefrightdolby_etc_libstagefrightdolby_symlink32 \
+    libhwdap_v3_6_etc_libhwdap_v3_6_symlink32 \
+    libswdap_v3_6_etc_libswdap_v3_6_symlink32 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc_vendor.dolby_v3_6.hardware.dms360@2.0-impl_symlink32 \
+    vendor.dolby_v3_6.hardware.dms360@2.0_etc_vendor.dolby_v3_6.hardware.dms360@2.0_symlink32 \
     libimscamera_jni_libimscamera_jni_symlink64 \
     libimsmedia_jni_libimsmedia_jni_symlink64 \
     libwfdnative_libwfdnative_symlink64 \
