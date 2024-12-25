@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -7,7 +7,6 @@
 on post-fs-data
     mkdir /dev/socket/qcc_app 0770 system misc
     chmod 2770 /dev/socket/qcc_app
-
     mkdir /data/misc/qcc 0770 system misc
     mkdir /data/misc/qcc/up 0770 system misc
     mkdir /data/misc/qcc/down 0770 system misc
@@ -45,3 +44,6 @@ service qccsyshal@1.2-service /system/system_ext/bin/qccsyshal@1.2-service
     class hal
     user system
     group misc system
+
+on property:hwservicemanager.disabled=true
+    stop qccsyshal@1.2-service

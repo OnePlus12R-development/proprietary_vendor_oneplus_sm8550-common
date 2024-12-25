@@ -1,7 +1,7 @@
 {
   "config": {
     "hw_platform": ["MTP", "Surf", "RCM", "QRD", "HDK"],
-    "soc_id": ["519", "536", "600", "601"]
+    "soc_id": ["519", "536", "600", "601", "604"]
   },
   "lps22df_0":{
     "owner": "lps22df",

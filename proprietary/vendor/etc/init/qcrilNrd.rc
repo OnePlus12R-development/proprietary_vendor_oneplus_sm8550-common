@@ -63,7 +63,7 @@ on property:persist.radio.multisim.config=dsds && property:ro.baseband=msm
     setprop persist.radio.oplus.qcrild_start 1
 #endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
-on property:persist.radio.multisim.config=dsds && property:ro.baseband=msm
+on property:persist.radio.multisim.config=dsds && property:ro.baseband=mdm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild
@@ -81,7 +81,7 @@ on property:persist.radio.multisim.config=DSDS && property:ro.baseband=msm
     setprop persist.radio.oplus.qcrild_start 1
 #endif /* OPLUS_HARDWARE_RADIO_QCRILD */
 
-on property:persist.radio.multisim.config=DSDS && property:ro.baseband=msm
+on property:persist.radio.multisim.config=DSDS && property:ro.baseband=mdm
     stop vendor.qcrild
     stop vendor.qcrild2
     start vendor.qcrild

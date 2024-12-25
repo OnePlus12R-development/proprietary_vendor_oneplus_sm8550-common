@@ -2,7 +2,7 @@
   "config":
   {
     "hw_platform": ["MTP", "Surf", "RCM", "HDK"],
-    "soc_id": ["519", "536"]
+    "soc_id": ["519", "536", "604"]
   },
   "sht4x_0":{
     "owner": "sns_sht4x",

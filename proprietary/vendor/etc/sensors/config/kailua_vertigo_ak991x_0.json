@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["Surf", "RCM"],
-    "soc_id": ["519", "536"]
+    "soc_id": ["519", "536", "603", "604"]
   },
   "ak0991x_0_platform":{
     "owner": "sns_ak0991x",

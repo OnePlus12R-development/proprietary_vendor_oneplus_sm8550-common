@@ -4,6 +4,7 @@ file=platform_subtype=/sys/devices/soc0/platform_subtype
 file=platform_subtype_id=/sys/devices/soc0/platform_subtype_id
 file=platform_version=/sys/devices/soc0/platform_version
 file=soc_id=/sys/devices/soc0/soc_id
+file=input=json.lst
 file=revision=/sys/devices/soc0/revision
 file=output=/mnt/vendor/persist/sensors/registry/registry
 file=config=/odm/etc/sensor/config

@@ -140,10 +140,10 @@
     ".orient":{
       "owner": "lsm6dsv",
       "x":{ "type": "str", "ver": "0",
-        "data": "+y"
+        "data": "+x"
       },
       "y":{ "type": "str", "ver": "0",
-        "data": "-x"
+        "data": "+y"
       },
       "z":{ "type": "str", "ver": "0",
         "data": "+z"

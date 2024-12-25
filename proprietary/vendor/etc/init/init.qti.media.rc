@@ -1,7 +1,7 @@
 #==============================================================================
 #       init.qti.media.rc
 #
-# Copyright (c) 2020 Qualcomm Technologies, Inc.
+# Copyright (c) 2020, 2022 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
@@ -40,6 +40,9 @@ service qti-media /vendor/bin/init.qti.media.sh
     oneshot
 
 on early-init
+    setprop vendor.media.system.build_codename ${ro.build.version.release_or_codename}
+
+on post-fs
     start qti-media
 
 on post-fs-data

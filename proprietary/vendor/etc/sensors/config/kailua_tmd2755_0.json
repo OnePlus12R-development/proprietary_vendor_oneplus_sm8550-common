@@ -1,7 +1,7 @@
 {
   "config":{
     "hw_platform": ["MTP", "Surf", "RCM", "HDK"],
-    "soc_id": ["519", "536", "600", "601"]
+    "soc_id": ["519", "536", "600", "601", "604"]
   },
   "tmd2755_0":{
     "owner": "sns_tmd2755",
@@ -133,7 +133,7 @@
           "data": "0.0"
         },
         "a_time_usec":{ "type": "flt", "ver": "0",
-          "data": "150012.0"
+          "data": "50000.0"
         },
         "a_wtime_usec":{ "type": "flt", "ver": "0",
           "data": "2780.0"
@@ -205,7 +205,7 @@
           "data": "2816.0"
         },
         "p_wtime_usec":{ "type": "flt", "ver": "0",
-          "data": "2780.0"
+          "data": "50000.0"
         },
         "p_pulse_len":{ "type": "flt", "ver": "0",
           "data": "32.0"

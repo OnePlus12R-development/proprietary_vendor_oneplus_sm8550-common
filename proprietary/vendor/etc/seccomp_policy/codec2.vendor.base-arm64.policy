@@ -1,5 +1,5 @@
 ###################################################################################################
-# Copyright (c) 2020-2022 Qualcomm Technologies, Inc.
+# Copyright (c) 2020-2023 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 ###################################################################################################
@@ -65,6 +65,7 @@ getrandom: 1
 madvise: 1
 inotify_init1: 1
 inotify_add_watch: 1
+inotify_rm_watch: 1
 
 # crash dump policy additions
 clock_gettime: 1
@@ -98,3 +99,5 @@ fchmod: 1
 #endif /*OPLUS_FEATURE_VIDEOLOGKIT*/
 sched_setaffinity: 1
 sched_getaffinity: 1
+sched_get_priority_max: 1
+sched_setscheduler: 1

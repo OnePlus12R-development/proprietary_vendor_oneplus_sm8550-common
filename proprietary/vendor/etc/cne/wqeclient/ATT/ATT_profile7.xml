@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--Copyright (c) 2021-2022 Qualcomm Technologies, Inc.
+<!--Copyright (c) 2021-2023 Qualcomm Technologies, Inc.
     All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.-->
 <AndsfPolicy><Andsf>
@@ -260,15 +260,15 @@
 					<!-- Time for which CQE is not reevaluted after it was declared bad due to MAC stats -->
 					<MACHysteresisTimer units="secs">120</MACHysteresisTimer>
 					<!-- Alpha to compute RSSI averaging based on IIR filtering mechanism -->
-					<MACStatsAveragingAlpha>0.57</MACStatsAveragingAlpha>
+					<MACStatsAveragingAlpha>0.6</MACStatsAveragingAlpha>
 					<!-- Threshold for RX MPDU PER -->
 					<RMP_THR>1.0</RMP_THR>
 					<!-- Minimum MPDU count to activate RX MPDU PER -->
-					<RMP_CNT_THR>4</RMP_CNT_THR>
+					<RMP_CNT_THR>10</RMP_CNT_THR>
 					<!-- Cutoff RX MCS index -->
-					<RX_MCS_THR>8</RX_MCS_THR>
+					<RX_MCS_THR>9</RX_MCS_THR>
 					<!-- Cutoff RX BW index -->
-					<RX_BW_THR>3</RX_BW_THR>
+					<RX_BW_THR>7</RX_BW_THR>
 					<!-- Threshold for TX MSDU drop -->
 					<TMD_THR>1.0</TMD_THR>
 					<!-- Minimum MSDU count to activate TX MSDU drop -->
@@ -276,11 +276,11 @@
 					<!-- Threshold for MPDU retry rate -->
 					<TMR_THR>1.0</TMR_THR>
 					<!-- Minimum MPDU count to activate MPDU retry rate -->
-					<TMR_CNT_THR>100</TMR_CNT_THR>
+					<TMR_CNT_THR>45</TMR_CNT_THR>
 					<!-- Cutoff TX MCS index -->
-					<TX_MCS_THR>4</TX_MCS_THR>
+					<TX_MCS_THR>3</TX_MCS_THR>
 					<!-- Cutoff TX BW index -->
-					<TX_BW_THR>2</TX_BW_THR>
+					<TX_BW_THR>3</TX_BW_THR>
 					<!-- Maximum MPDU count to activate RX MPDU PER -->
 					<RMP_UBCNT_THR>1000</RMP_UBCNT_THR>
 					<!-- Maximum MPDU count to activate MPDU retry rate -->
@@ -288,7 +288,7 @@
 					<!-- Threshold for PERAM -->
 					<PERAM_THR>1.0</PERAM_THR>
 					<!-- Minimum MPDU count to activate PERAM -->
-					<PERAM_CNT_THR>30</PERAM_CNT_THR>
+					<PERAM_CNT_THR>10</PERAM_CNT_THR>
 					<!-- Maximum MPDU count to activate PERAM -->
 					<PERAM_UBCNT_THR>1000</PERAM_UBCNT_THR>
 					<!-- CQE throughput Threshold-->

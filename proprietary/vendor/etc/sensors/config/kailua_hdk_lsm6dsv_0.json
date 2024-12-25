@@ -1,7 +1,8 @@
 {
   "config":{
     "hw_platform": ["HDK"],
-    "soc_id": ["536"]
+    "platform_subtype_id": ["0", "1"],
+    "soc_id": ["536", "603"]
   },
   "lsm6dsv_0_platform":{
     "owner": "lsm6dsv",

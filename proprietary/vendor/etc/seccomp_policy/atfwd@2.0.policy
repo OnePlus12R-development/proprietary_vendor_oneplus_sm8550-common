@@ -20,6 +20,7 @@
 
 mmap: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
 munmap: 1
+gettid: 1
 getuid: 1
 writev: 1
 prctl: 1
