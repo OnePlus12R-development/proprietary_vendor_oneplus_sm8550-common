@@ -7828,7 +7828,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "vendor.oplus.hardware.appradioaidl-V1-ndk",
                 "vendor.oplus.hardware.ims-V1-ndk",
-                "vendor.oplus.hardware.radio-V2-ndk_platform",
+                "vendor.oplus.hardware.radio-V2-ndk",
                 "libcommcenterutils",
                 "libcommcenterfw",
                 "libutils",
@@ -13055,7 +13055,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.radio-V2-ndk_platform",
+    name: "vendor.oplus.hardware.radio-V2-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -13063,7 +13063,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.oplus.hardware.radio-V2-ndk_platform.so",
+                "proprietary/vendor/lib64/vendor.oplus.hardware.radio-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
