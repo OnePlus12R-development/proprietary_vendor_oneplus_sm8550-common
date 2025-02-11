@@ -1,0 +1,6 @@
+#LiuWenjie@CONNECTIVITY.NFC.BASIC.6697863, 2024/01/18, disable secure_element_vintf_enabled fix xts
+#change service.rc run path from /vendor to /odm
+service secureelement-hal_1_2 /odm/bin/hw/vendor.qti.secure_element@1.2-service
+    class hal
+    user system
+    group system

@@ -1,0 +1,11 @@
+#
+# Copyright (c) 2017-2018, 2020 Qualcomm Technologies, Inc.
+# All Rights Reserved.
+# Confidential and Proprietary - Qualcomm Technologies, Inc.
+#
+#LiuWenjie@CONNECTIVITY.NFC.BASIC.6697863, 2024/01/18, disable secure_element_vintf_enabled fix xts
+#change path from /vendor to /odm
+service qti_esepowermanager_service_1_1 /odm/bin/hw/vendor.qti.esepowermanager@1.1-service
+    class hal
+    user system
+    group nfc system
