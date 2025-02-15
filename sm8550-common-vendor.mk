@@ -417,6 +417,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-aidl-impl-qti \
     audio.primary.kalama \
     com.dsi.ant@1.0-impl \
+    vendor.qti.esepowermanager@1.1-impl_vendor \
     vendor.qti.hardware.alarm@1.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.0-impl \
     vendor.qti.hardware.bluetooth_audio@2.1-impl \
@@ -837,6 +838,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.data.mwqem@1.0 \
     vendor.qti.data.slm@1.0 \
     vendor.qti.diaghal@1.0_vendor \
+    vendor.qti.esepowermanager@1.0_vendor \
+    vendor.qti.esepowermanager@1.1_vendor \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
@@ -1355,3 +1358,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libEGL_adreno_so \
     vendor_lib64_libGLESv2_adreno_so \
     vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon

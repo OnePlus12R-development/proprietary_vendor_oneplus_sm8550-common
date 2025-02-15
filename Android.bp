@@ -828,6 +828,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.1-impl_vendor",
+    stem: "vendor.qti.esepowermanager@1.1-impl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libesepmconfig",
+                "vendor.qti.esepowermanager@1.0_vendor",
+                "vendor.qti.esepowermanager@1.1_vendor",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.alarm@1.0-impl",
     owner: "oneplus",
     strip: {
@@ -4061,7 +4095,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libQSEEComAPI",
                 "libesepmconfig",
-                "vendor.qti.esepowermanager@1.1",
+                "vendor.qti.esepowermanager@1.1_vendor",
                 "libqcbor",
                 "libcutils",
                 "libutils",
@@ -13698,6 +13732,65 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.qti.diaghal@1.0.so",
             ],
             shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.0_vendor",
+    stem: "vendor.qti.esepowermanager@1.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.esepowermanager@1.1_vendor",
+    stem: "vendor.qti.esepowermanager@1.1",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.qti.esepowermanager@1.0_vendor",
                 "libhidlbase",
                 "liblog",
                 "libutils",
