@@ -1140,7 +1140,7 @@ PRODUCT_PACKAGES += \
     libswdap_v3_6 \
     vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.dolby_v3_6.hardware.dms360@2.0 \
-    vendor.oplus.hardware.commondcs-V1-ndk \
+    vendor.oplus.hardware.commondcs-V1-ndk_odm \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.olc2-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
