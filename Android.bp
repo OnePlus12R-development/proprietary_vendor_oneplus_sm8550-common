@@ -22212,7 +22212,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.oplus.hardware.commondcs-V1-ndk",
+    name: "vendor.oplus.hardware.commondcs-V1-ndk_odm",
+    stem: "vendor.oplus.hardware.commondcs-V1-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -26433,7 +26434,7 @@ cc_prebuilt_binary {
                 "vendor.oplus.hardware.osense.client-V1-ndk",
                 "libosenseaidlhalclient",
                 "vendor.oplus.hardware.touch-V1-ndk_odm",
-                "vendor.oplus.hardware.commondcs-V1-ndk",
+                "vendor.oplus.hardware.commondcs-V1-ndk_odm",
                 "libolc_vnd",
                 "libhardware",
                 "libc++",

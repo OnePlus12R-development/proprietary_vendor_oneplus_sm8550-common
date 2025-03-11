@@ -1192,7 +1192,7 @@ PRODUCT_PACKAGES += \
     libpwsoftirisPCS \
     libsnapdragoncolor-pxlw \
     libtfa98xx \
-    vendor.oplus.hardware.commondcs-V1-ndk \
+    vendor.oplus.hardware.commondcs-V1-ndk_odm \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.olc2-V1-ndk \
     vendor.oplus.hardware.olc2-V2-ndk \
